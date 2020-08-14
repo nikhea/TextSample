@@ -1,0 +1,60 @@
+*:focus {
+  border: none !important;
+  outline: none;
+}
+
+body {
+  margin: 0 auto;
+  width: 80%;
+  background: #333;
+}
+
+#OutPut {
+  padding: 20vh 10px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: center;
+  background-color: #333;
+}
+.Input {
+  display: flex;
+  justify-content: center;
+}
+
+.Input input {
+  border: none;
+  border-bottom: 1px solid red ;
+  padding: 20px 0px;
+  width: 60vw;
+  margin: 30px 0px;
+}
+.RemoveBackground{
+    background:'#fff';
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.controls button {
+   margin: 10px;
+}
+/* JS TOGGLES */
+.line-through {
+  text-decoration: line-through;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bolder;
+}
+
+
+@media(max-width:600px){
+  .controls {
+   /* flex-direction: column; */
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+  }
+}
